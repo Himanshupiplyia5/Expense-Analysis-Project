@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df=pd.read_csv("/Users/himanshupiplyia/Documents/py/d/raw_expense.csv")
+df=pd.read_csv("raw_expense.csv")
 
 df["category"]=df["category"].str.lower().str.strip()
 df["amount"]=pd.to_numeric(df["amount"],errors="coerce")
